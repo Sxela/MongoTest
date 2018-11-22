@@ -3,8 +3,6 @@ version: '2'
 services:
   transpiler:
     build: .
-    ports:
-       - "4001:3000"
 
     volumes_from:
       - server

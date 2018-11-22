@@ -1,2 +1,2 @@
-#  Mongo-test  
-A basic mongodb project.
+# NodeBook  
+A begginner's project.
