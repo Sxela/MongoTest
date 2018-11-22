@@ -1,6 +1,6 @@
 
-
-
+version: '2'
+services:
   transpiler:
     build: .
     ports:
@@ -14,8 +14,6 @@
 
   server:
     build: .
-    links: 
-       - "data:database"
     ports:
        - "4000:3000"
     volumes:
@@ -29,4 +27,6 @@
     image: mongo
     ports:
        - "27017:27017"
+
+
     
