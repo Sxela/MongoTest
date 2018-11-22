@@ -2,8 +2,8 @@ import * as express from 'express';
 import * as mongoose from 'mongoose';
 import * as book from './book';
 
-const uri: string = 'mongodb://127.0.0.1:27017/local';
-//mongoose.connect("mongodb://localhost:27017/local", { useNewUrlParser: true });
+const uri: string = 'mongodb://database:27017/local';
+//mongoose.connect("mongodb://172.17.0.3:27017/local", { useNewUrlParser: true });
 
 mongoose.connect(uri, { useNewUrlParser: true }, (err: any) => {
     if (err) {
